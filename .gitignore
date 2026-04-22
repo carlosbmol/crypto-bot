@@ -1,0 +1,72 @@
+# ══════════════════════════════════════════════════════════════
+# .gitignore — Crypto Bot
+# ══════════════════════════════════════════════════════════════
+# *.example files ARE tracked — they are templates with no real values.
+# ══════════════════════════════════════════════════════════════
+
+# ── Secrets ────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+docker/.env
+docker/.env.*
+!docker/.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# ── Python bytecode ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Logs ───────────────────────────────────────────────────
+*.log
+*.log.*
+logs/
+vmc_bot.log
+mt5_executor.log
+
+# ── Virtual environments ────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── IDEs ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS artifacts ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Tooling metadata ───────────────────────────────────────
+.claude/
+
+# ── Tabular data ───────────────────────────────────────────
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.xlsm
+*.ods
+*.parquet
+*.feather
+
+# ── Generated output ───────────────────────────────────────
+backtest_results/
+no_importantes/
